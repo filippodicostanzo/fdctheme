@@ -1,0 +1,21 @@
+.full_width .section-group {
+  width: 100%;
+  display: block;
+  padding: 20px; }
+
+.with_aside .section-group {
+  width: 72%;
+  display: inline-block;
+  box-sizing: border-box;
+  border-left: 1px solid beige;
+  padding: 20px; }
+
+.with_aside.aside_left aside {
+  width: 28%;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  float: left;
+  padding: 20px; }
+
+/*# sourceMappingURL=container.css.map */

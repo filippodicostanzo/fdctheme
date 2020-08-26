@@ -1,0 +1,911 @@
+@font-face {
+    font-family: supreme-icons;
+    src: url(../fonts/supreme-icons.eot?jgrq3s);
+    src: url(../fonts/supreme-icons.eot?jgrq3s#iefix) format('embedded-opentype'),url(../fonts/supreme-icons.ttf?jgrq3s) format('truetype'),url(../fonts/supreme-icons.woff?jgrq3s) format('woff'),url(../fonts/supreme-icons.svg?jgrq3s#supreme-icons) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+[class*=" supreme-icon-"],[class^=supreme-icon-] {
+    font-family: supreme-icons!important;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.supreme-icon-add-circular-outlined-button:before {
+    content: "\e900"
+}
+
+.supreme-icon-add-cross-outlined-symbol:before {
+    content: "\e901"
+}
+
+.supreme-icon-add-square-outlined-interface-button:before {
+    content: "\e902"
+}
+
+.supreme-icon-airplane-rotated-diagonal-transport-outlined-symbol:before {
+    content: "\e903"
+}
+
+.supreme-icon-alarm-clock-symbol:before {
+    content: "\e904"
+}
+
+.supreme-icon-arrow-entering-into-square:before {
+    content: "\e905"
+}
+
+.supreme-icon-arrow-left:before {
+    content: "\e906"
+}
+
+.supreme-icon-arrow-right:before {
+    content: "\e907"
+}
+
+.supreme-icon-attach-interface-symbol-of-rotated-paperclip:before {
+    content: "\e908"
+}
+
+.supreme-icon-attachment:before {
+    content: "\e909"
+}
+
+.supreme-icon-audio-tool-in-silence:before {
+    content: "\e90a"
+}
+
+.supreme-icon-back-left-arrow-circular-button-outline:before {
+    content: "\e90b"
+}
+
+.supreme-icon-back-left-arrow-square-button-outline:before {
+    content: "\e90c"
+}
+
+.supreme-icon-big-map-placeholder-outlined-symbol-of-interface:before {
+    content: "\e90d"
+}
+
+.supreme-icon-bookmark-outlined-interface-symbol:before {
+    content: "\e90e"
+}
+
+.supreme-icon-book-outline:before {
+    content: "\e90f"
+}
+
+.supreme-icon-bottle-gross-outlined-symbol:before {
+    content: "\e910"
+}
+
+.supreme-icon-button-of-nine-outlined-circles:before {
+    content: "\e911"
+}
+
+.supreme-icon-buttons:before {
+    content: "\e912"
+}
+
+.supreme-icon-cellphone:before {
+    content: "\e913"
+}
+
+.supreme-icon-cellular-phone-outline:before {
+    content: "\e914"
+}
+
+.supreme-icon-center-text-interface-symbol-of-lines:before {
+    content: "\e915"
+}
+
+.supreme-icon-chat-comment-oval-speech-bubble-with-text-lines:before {
+    content: "\e916"
+}
+
+.supreme-icon-chat-oval-speech-bubbles-symbol:before {
+    content: "\e917"
+}
+
+.supreme-icon-checkmark-outline:before {
+    content: "\e918"
+}
+
+.supreme-icon-checkmark-square-button-outline:before {
+    content: "\e919"
+}
+
+.supreme-icon-checkmark-verify-interface-symbol-button:before {
+    content: "\e91a"
+}
+
+.supreme-icon-circular-arrow-counterclockwise-rotating-symbol:before {
+    content: "\e91b"
+}
+
+.supreme-icon-circular-graphic-outline:before {
+    content: "\e91c"
+}
+
+.supreme-icon-circular-outlined-badge-with-ribbon-recognition-prize-symbol:before {
+    content: "\e91d"
+}
+
+.supreme-icon-circular-target-shooting-interface-symbol:before {
+    content: "\e91e"
+}
+
+.supreme-icon-clipboard-square-symbol:before {
+    content: "\e91f"
+}
+
+.supreme-icon-close-circular-button-symbol:before {
+    content: "\e920"
+}
+
+.supreme-icon-cloud-outlined-shape:before {
+    content: "\e921"
+}
+
+.supreme-icon-cloud-with-hail-falling:before {
+    content: "\e922"
+}
+
+.supreme-icon-cocktail-glass-outline:before {
+    content: "\e923"
+}
+
+.supreme-icon-code-signs:before {
+    content: "\e924"
+}
+
+.supreme-icon-collapse-two-arrows-diagonal-symbol:before {
+    content: "\e925"
+}
+
+.supreme-icon-comment-oval-outlined-balloon:before {
+    content: "\e926"
+}
+
+.supreme-icon-compass-orientation-symbol:before {
+    content: "\e927"
+}
+
+.supreme-icon-contract-two-arrows-symbol-pointing-the-center-of-square-button:before {
+    content: "\e928"
+}
+
+.supreme-icon-copy-two-paper-sheets-interface-symbol:before {
+    content: "\e929"
+}
+
+.supreme-icon-crescent-moon-phase-outlined-shape:before {
+    content: "\e92a"
+}
+
+.supreme-icon-cropping-interface-tool-symbol:before {
+    content: "\e92b"
+}
+
+.supreme-icon-cross-rounded-outline:before {
+    content: "\e92c"
+}
+
+.supreme-icon-cross-square-button:before {
+    content: "\e92d"
+}
+
+.supreme-icon-cube-of-notes-stack:before {
+    content: "\e92e"
+}
+
+.supreme-icon-double-arrow-horizontal-symbol:before {
+    content: "\e92f"
+}
+
+.supreme-icon-double-arrow-vertical-symbol:before {
+    content: "\e930"
+}
+
+.supreme-icon-double-right-arrows-angles:before {
+    content: "\e931"
+}
+
+.supreme-icon-down-arrow:before {
+    content: "\e932"
+}
+
+.supreme-icon-down-arrow-square-button:before {
+    content: "\e933"
+}
+
+.supreme-icon-down-arrow-square-outlined-button:before {
+    content: "\e934"
+}
+
+.supreme-icon-down-arrow-to-a-square:before {
+    content: "\e935"
+}
+
+.supreme-icon-down-circular-button:before {
+    content: "\e936"
+}
+
+.supreme-icon-download-circular-button:before {
+    content: "\e937"
+}
+
+.supreme-icon-download-down-arrow-symbol:before {
+    content: "\e938"
+}
+
+.supreme-icon-download-from-internet-cloud:before {
+    content: "\e939"
+}
+
+.supreme-icon-download-square-button:before {
+    content: "\e93a"
+}
+
+.supreme-icon-download-square-outlined-interface-button:before {
+    content: "\e93b"
+}
+
+.supreme-icon-electrical-storm-weather-symbol:before {
+    content: "\e93c"
+}
+
+.supreme-icon-electronic-game-machine-outline:before {
+    content: "\e93d"
+}
+
+.supreme-icon-email-closed-outlined-back-envelope-interface-symbol:before {
+    content: "\e93e"
+}
+
+.supreme-icon-email-square-outlined-interface-symbol-of-envelope-back:before {
+    content: "\e93f"
+}
+
+.supreme-icon-equalization:before {
+    content: "\e940"
+}
+
+.supreme-icon-equalizer-interface-square-button-symbol:before {
+    content: "\e941"
+}
+
+.supreme-icon-event-weekly-calendar-symbol:before {
+    content: "\e942"
+}
+
+.supreme-icon-expanding-two-opposite-arrows-diagonal-symbol-of-interface:before {
+    content: "\e943"
+}
+
+.supreme-icon-expand-square-interface-button-of-two-arrows:before {
+    content: "\e944"
+}
+
+.supreme-icon-fast-forward-double-arrow-outline:before {
+    content: "\e945"
+}
+
+.supreme-icon-favourites-star-outline-interface-symbol:before {
+    content: "\e946"
+}
+
+.supreme-icon-file-rounded-empty-sheet:before {
+    content: "\e947"
+}
+
+.supreme-icon-file-rounded-outlined-symbol:before {
+    content: "\e948"
+}
+
+.supreme-icon-film-strip-couple-of-photograms:before {
+    content: "\e949"
+}
+
+.supreme-icon-flag-outline:before {
+    content: "\e94a"
+}
+
+.supreme-icon-fog-at-night-weather-symbol:before {
+    content: "\e94b"
+}
+
+.supreme-icon-foggy-day-fog-at-sunset-or-sunrise:before {
+    content: "\e94c"
+}
+
+.supreme-icon-folder-outline:before {
+    content: "\e94d"
+}
+
+.supreme-icon-fork:before {
+    content: "\e94e"
+}
+
+.supreme-icon-four-rounded-squares-button:before {
+    content: "\e94f"
+}
+
+.supreme-icon-full-screen-interface-symbol-of-four-arrows-in-square-button:before {
+    content: "\e950"
+}
+
+.supreme-icon-games-machine-outline:before {
+    content: "\e951"
+}
+
+.supreme-icon-gear-outlined-symbol:before {
+    content: "\e952"
+}
+
+.supreme-icon-giftbox-outline:before {
+    content: "\e953"
+}
+
+.supreme-icon-graphical-business-presentation-on-a-screen:before {
+    content: "\e954"
+}
+
+.supreme-icon-headphones-audio-symbol:before {
+    content: "\e955"
+}
+
+.supreme-icon-hot-interface-symbol-of-fire-flames-outline:before {
+    content: "\e956"
+}
+
+.supreme-icon-images-square-outlined-interface-button-symbol:before {
+    content: "\e957"
+}
+
+.supreme-icon-ink-interface-symbol-of-drop-outline:before {
+    content: "\e958"
+}
+
+.supreme-icon-label-outline:before {
+    content: "\e959"
+}
+
+.supreme-icon-left-alignment:before {
+    content: "\e95a"
+}
+
+.supreme-icon-left-arrow-curve-outline:before {
+    content: "\e95b"
+}
+
+.supreme-icon-left-arrow-in-circle-outline:before {
+    content: "\e95c"
+}
+
+.supreme-icon-left-arrow-line-symbol:before {
+    content: "\e95d"
+}
+
+.supreme-icon-left-arrow-rounded-outlined-button-interface-symbol:before {
+    content: "\e95e"
+}
+
+.supreme-icon-left-arrow-signal-outline:before {
+    content: "\e95f"
+}
+
+.supreme-icon-left-arrow-square-outlined-button:before {
+    content: "\e960"
+}
+
+.supreme-icon-left-arrow-with-a-cross:before {
+    content: "\e961"
+}
+
+.supreme-icon-like-heart-outline-symbol:before {
+    content: "\e962"
+}
+
+.supreme-icon-link-button:before {
+    content: "\e963"
+}
+
+.supreme-icon-list:before {
+    content: "\e964"
+}
+
+.supreme-icon-list-interface-symbol:before {
+    content: "\e965"
+}
+
+.supreme-icon-lock-circular-padlock-outline-tool-symbol:before {
+    content: "\e966"
+}
+
+.supreme-icon-login-arrow-symbol-entering-back-into-a-square:before {
+    content: "\e967"
+}
+
+.supreme-icon-login-square-arrow-button-outline:before {
+    content: "\e968"
+}
+
+.supreme-icon-map-folded-outlined-paper:before {
+    content: "\e969"
+}
+
+.supreme-icon-megaphone-outline-of-amplification-tool:before {
+    content: "\e96a"
+}
+
+.supreme-icon-men:before {
+    content: "\e96b"
+}
+
+.supreme-icon-menu-square-button:before {
+    content: "\e96c"
+}
+
+.supreme-icon-menu-three-outlined-rounded-lines-symbol:before {
+    content: "\e96d"
+}
+
+.supreme-icon-microphone:before {
+    content: "\e96e"
+}
+
+.supreme-icon-microphone-outlined-tool:before {
+    content: "\e96f"
+}
+
+.supreme-icon-minus-circular-button:before {
+    content: "\e970"
+}
+
+.supreme-icon-minus-in-zoom-symbol:before {
+    content: "\e971"
+}
+
+.supreme-icon-minus-outline:before {
+    content: "\e972"
+}
+
+.supreme-icon-minus-square-outlined-button:before {
+    content: "\e973"
+}
+
+.supreme-icon-mobile-menu:before {
+    content: "\e974"
+}
+
+.supreme-icon-monitor-outline:before {
+    content: "\e975"
+}
+
+.supreme-icon-musical-note:before {
+    content: "\e976"
+}
+
+.supreme-icon-musical-note-outlined-symbol:before {
+    content: "\e977"
+}
+
+.supreme-icon-music-note:before {
+    content: "\e978"
+}
+
+.supreme-icon-music-rectangular-interface-button-outline:before {
+    content: "\e979"
+}
+
+.supreme-icon-music-theme:before {
+    content: "\e97a"
+}
+
+.supreme-icon-mute-voice:before {
+    content: "\e97b"
+}
+
+.supreme-icon-new-email-envelope-frontal-view:before {
+    content: "\e97c"
+}
+
+.supreme-icon-nine-oclock-on-circular-clock:before {
+    content: "\e97d"
+}
+
+.supreme-icon-notebook-rectangular-symbol-with-spring:before {
+    content: "\e97e"
+}
+
+.supreme-icon-note-outlined-symbol:before {
+    content: "\e97f"
+}
+
+.supreme-icon-notification-bell-outline-interface-symbol:before {
+    content: "\e980"
+}
+
+.supreme-icon-notification-bell-outline-interface-symbol-1:before {
+    content: "\e981"
+}
+
+.supreme-icon-opened-email-outlined-envelope-back-interface-symbol:before {
+    content: "\e982"
+}
+
+.supreme-icon-oval-empty-outlined-speech-bubble:before {
+    content: "\e983"
+}
+
+.supreme-icon-paintbrush-outline:before {
+    content: "\e984"
+}
+
+.supreme-icon-paper-airplane-outline:before {
+    content: "\e985"
+}
+
+.supreme-icon-pause-outlined-big-symbol:before {
+    content: "\e986"
+}
+
+.supreme-icon-pencil-big-outlined-vertical-tool-symbol:before {
+    content: "\e987"
+}
+
+.supreme-icon-phone-auricular-outline:before {
+    content: "\e988"
+}
+
+.supreme-icon-photo-camera-outline:before {
+    content: "\e989"
+}
+
+.supreme-icon-pin:before {
+    content: "\e98a"
+}
+
+.supreme-icon-planetary-grid-symbol:before {
+    content: "\e98b"
+}
+
+.supreme-icon-play-triangle-outline:before {
+    content: "\e98c"
+}
+
+.supreme-icon-portfolio-outline:before {
+    content: "\e98d"
+}
+
+.supreme-icon-print-interface-button-symbol-of-printer-outline:before {
+    content: "\e98e"
+}
+
+.supreme-icon-radio:before {
+    content: "\e98f"
+}
+
+.supreme-icon-rain-weather-cloud-outline-symbol-with-raindrops-lines:before {
+    content: "\e990"
+}
+
+.supreme-icon-rectangular-outlined-speech-bubble-symbol:before {
+    content: "\e991"
+}
+
+.supreme-icon-recycling-bin:before {
+    content: "\e992"
+}
+
+.supreme-icon-rewind-double-arrow-outline-multimedia-button-symbol:before {
+    content: "\e993"
+}
+
+.supreme-icon-right-arrow-angle:before {
+    content: "\e994"
+}
+
+.supreme-icon-right-arrow-circular-button-outline:before {
+    content: "\e995"
+}
+
+.supreme-icon-right-arrow-circular-outlined-button:before {
+    content: "\e996"
+}
+
+.supreme-icon-right-arrow-on-a-pole-outlined-orientation-signal-symbol:before {
+    content: "\e997"
+}
+
+.supreme-icon-right-arrow-outline:before {
+    content: "\e998"
+}
+
+.supreme-icon-right-arrow-square-button-symbol:before {
+    content: "\e999"
+}
+
+.supreme-icon-right-arrow-square-outlined-button:before {
+    content: "\e99a"
+}
+
+.supreme-icon-right-arrow-symbol-in-a-square-outline:before {
+    content: "\e99b"
+}
+
+.supreme-icon-rounded-rectangular-tool-shape:before {
+    content: "\e99c"
+}
+
+.supreme-icon-sand-clock:before {
+    content: "\e99d"
+}
+
+.supreme-icon-save-button-interface-symbol-of-outlined-diskette:before {
+    content: "\e99e"
+}
+
+.supreme-icon-search-interface-symbol:before {
+    content: "\e99f"
+}
+
+.supreme-icon-search-oval-magnification-tool-or-spoon-interface-symbol:before {
+    content: "\e9a0"
+}
+
+.supreme-icon-share-social-interface-button:before {
+    content: "\e9a1"
+}
+
+.supreme-icon-shopping-bag:before {
+    content: "\e9a2"
+}
+
+.supreme-icon-shopping-basket-e-commerce-symbol:before {
+    content: "\e9a3"
+}
+
+.supreme-icon-shopping-cart-outline:before {
+    content: "\e9a4"
+}
+
+.supreme-icon-shopping-cart-outline-1:before {
+    content: "\e9a5"
+}
+
+.supreme-icon-shuffle:before {
+    content: "\e9a6"
+}
+
+.supreme-icon-sort-ascending:before {
+    content: "\e9a7"
+}
+
+.supreme-icon-sort-descending:before {
+    content: "\e9a8"
+}
+
+.supreme-icon-speaker-musical-amplification-outlined-frontal-tool:before {
+    content: "\e9a9"
+}
+
+.supreme-icon-speaker-outline:before {
+    content: "\e9aa"
+}
+
+.supreme-icon-speaker-outline-1:before {
+    content: "\e9ab"
+}
+
+.supreme-icon-speaker-outline-audio-interface-symbol:before {
+    content: "\e9ac"
+}
+
+.supreme-icon-speaker-outlined-square-frontal-tool-audio-tool-symbol:before {
+    content: "\e9ad"
+}
+
+.supreme-icon-speech-bubble-oval-symbol-with-three-dots:before {
+    content: "\e9ae"
+}
+
+.supreme-icon-square-outline:before {
+    content: "\e9af"
+}
+
+.supreme-icon-square-shape-design-interface-tool-symbol:before {
+    content: "\e9b0"
+}
+
+.supreme-icon-square-targeting-interface-symbol:before {
+    content: "\e9b1"
+}
+
+.supreme-icon-store-commercial-symbol-outline:before {
+    content: "\e9b2"
+}
+
+.supreme-icon-sun-day-weather-symbol:before {
+    content: "\e9b3"
+}
+
+.supreme-icon-sunrise-or-sunset:before {
+    content: "\e9b4"
+}
+
+.supreme-icon-switch-outlined-symbol:before {
+    content: "\e9b5"
+}
+
+.supreme-icon-switch-outlined-tool-symbol:before {
+    content: "\e9b6"
+}
+
+.supreme-icon-tag-outline:before {
+    content: "\e9b7"
+}
+
+.supreme-icon-television-outline:before {
+    content: "\e9b8"
+}
+
+.supreme-icon-text-alignment-option-button-interface-symbol:before {
+    content: "\e9b9"
+}
+
+.supreme-icon-text-paper-sheet-symbol:before {
+    content: "\e9ba"
+}
+
+.supreme-icon-three-vertical-outlined-bars-symbol:before {
+    content: "\e9bb"
+}
+
+.supreme-icon-timer-timing-tool:before {
+    content: "\e9bc"
+}
+
+.supreme-icon-tool-outline-of-hotel-reception-or-covered-food-tray:before {
+    content: "\e9bd"
+}
+
+.supreme-icon-triangle-equilateral-outline-shape-on-horizontal-line:before {
+    content: "\e9be"
+}
+
+.supreme-icon-trophy-outline:before {
+    content: "\e9bf"
+}
+
+.supreme-icon-two-arrows:before {
+    content: "\e9c0"
+}
+
+.supreme-icon-two-circular-arrows:before {
+    content: "\e9c1"
+}
+
+.supreme-icon-two-circular-counterclockwise-rotating-arrows-symbol:before {
+    content: "\e9c2"
+}
+
+.supreme-icon-two-drops-sizes-outlined-shapes:before {
+    content: "\e9c3"
+}
+
+.supreme-icon-two-rounded-equal-squares-outlines-symbol:before {
+    content: "\e9c4"
+}
+
+.supreme-icon-unlocked-circular-padlock-outline:before {
+    content: "\e9c5"
+}
+
+.supreme-icon-up-arrow-angle:before {
+    content: "\e9c6"
+}
+
+.supreme-icon-up-arrow-circular-button:before {
+    content: "\e9c7"
+}
+
+.supreme-icon-up-arrow-in-square-interface-button:before {
+    content: "\e9c8"
+}
+
+.supreme-icon-up-arrow-into-square:before {
+    content: "\e9c9"
+}
+
+.supreme-icon-up-arrow-or-flag-shape-big-gross-outlined-symbol:before {
+    content: "\e9ca"
+}
+
+.supreme-icon-up-arrow-square-button:before {
+    content: "\e9cb"
+}
+
+.supreme-icon-up-arrow-square-button-outline:before {
+    content: "\e9cc"
+}
+
+.supreme-icon-up-arrow-with-house-shape-outlined-symbol:before {
+    content: "\e9cd"
+}
+
+.supreme-icon-up-circular-interface-button:before {
+    content: "\e9ce"
+}
+
+.supreme-icon-upload:before {
+    content: "\e9cf"
+}
+
+.supreme-icon-upload-to-the-cloud:before {
+    content: "\e9d0"
+}
+
+.supreme-icon-upper-right-arrow-square-button-outlined-symbol:before {
+    content: "\e9d1"
+}
+
+.supreme-icon-up-square-button-outline:before {
+    content: "\e9d2"
+}
+
+.supreme-icon-user-info-interface-symbol-with-text-lines-at-right-side:before {
+    content: "\e9d3"
+}
+
+.supreme-icon-user-outline-male-symbol-of-interface:before {
+    content: "\e9d4"
+}
+
+.supreme-icon-video-camera-outline:before {
+    content: "\e9d5"
+}
+
+.supreme-icon-wallet-outline:before {
+    content: "\e9d6"
+}
+
+.supreme-icon-weather-interface-symbol-of-a-semicircle-on-three-lines-perspective:before {
+    content: "\e9d7"
+}
+
+.supreme-icon-weekly-calendar:before {
+    content: "\e9d8"
+}
+
+.supreme-icon-weekly-calendar-outline-event-interface-symbol:before {
+    content: "\e9d9"
+}
+
+.supreme-icon-window-outline:before {
+    content: "\e9da"
+}
+
+.supreme-icon-winds-lines-weather-symbol:before {
+    content: "\e9db"
+}
+
+.supreme-icon-wind-socket-outlined-symbol:before {
+    content: "\e9dc"
+}
+
+.supreme-icon-wrench-outline:before {
+    content: "\e9dd"
+}
+
+.supreme-icon-zoom-increasing-symbol:before {
+    content: "\e9de"
+}

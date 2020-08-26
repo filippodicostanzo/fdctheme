@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,iBAAiB,GAAC,GAAG,CAAC;EAClB,SAAS,EAAE,+MAA+M;CAC7N",
+    "sources": [
+        "effects.scss"
+    ],
+    "names": [],
+    "file": "effects.css"
+}

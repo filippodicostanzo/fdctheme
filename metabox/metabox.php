@@ -3,66 +3,44 @@ function custom_meta_box_markup($post)
 {
     ?>
     <div>
-        <label for="meta-box-text">Text</label>
-        <input name="meta-box-text" type="text" value="<?php echo get_post_meta($post->ID, "meta-box-text", true); ?>">
 
-        <br>
+        <div class="setting_text">
+            <label for=" meta-box-select">Choose Revolution Slider</label>
+        </div>
+        <div class="setting_input">
+            <select name="meta-box-select">
+                <?php
 
-        <label for="meta-box-select">Select</label>
-        <select name="meta-box-select">
-            <?php
-
-            if (class_exists('RevSlider')) {
-                $sliders = fdc_get_sliders();
-            } else {
-                $sliders = array();
-            }
-
-            ?>
-
-            <?php
-            foreach ($sliders as $key => $value) {
-                if ($value == get_post_meta($post->ID, "meta-box-select", true)) {
-                    ?>
-                    <option selected><?php echo $value; ?></option>
-                    <?php
+                if (class_exists('RevSlider')) {
+                    $sliders = fdc_get_sliders();
                 } else {
-                    ?>
-                    <option><?php echo $value; ?></option>
-                    <?php
+                    $sliders = array();
                 }
-            }
-            ?>
-        </select>
 
-        <br>
+                ?>
 
-        <?php
-
-        ?>
-
-        <label for="meta-box-checkbox">CheckBox</label>
-        <?php
-        $checkbox_value = get_post_meta($post->ID, "meta-box-checkbox", true);
-
-        if ($checkbox_value == "") {
-            ?>
-            <input name="meta-box-checkbox" type="checkbox" value="true">
-            <?php
-        } else if ($checkbox_value == "true") {
-            ?>
-            <input name="meta-box-checkbox" type="checkbox" value="true" checked>
-            <?php
-        }
-        ?>
-
+                <?php
+                foreach ($sliders as $key => $value) {
+                    if ($value == get_post_meta($post->ID, "meta-box-select", true)) {
+                        ?>
+                        <option selected><?php echo $value; ?></option>
+                        <?php
+                    } else {
+                        ?>
+                        <option><?php echo $value; ?></option>
+                        <?php
+                    }
+                }
+                ?>
+            </select>
+        </div>
     </div>
     <?php
 }
 
 function add_custom_meta_box()
 {
-    add_meta_box("custom-meta-box", "Custom Meta Box", "custom_meta_box_markup", "page", "normal");
+    add_meta_box("custom-meta-box", "FDC Theme Select Slider", "custom_meta_box_markup", "page", "normal");
 }
 
 add_action("add_meta_boxes", "add_custom_meta_box");
@@ -107,7 +85,7 @@ function fdc_get_sliders()
 {
     global $wpdb;
 
-    $sliders = array( 0 => __('-- Select --', 'fdctheme') );
+    $sliders = array(0 => __('-- Select --', 'fdctheme'));
 
     // check if Revolution Slider is activated
 

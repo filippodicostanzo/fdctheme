@@ -10,10 +10,15 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <header class="entry-header">
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <?php the_title( '<h1 class="entry-title after-title-center container">', '</h1>' ); ?>
+        <?php the_breadcrumb(); ?>
     </header><!-- .entry-header -->
 
-    <?php //fdctheme_excerpt(); ?>
+
+
+    <?php //fdctheme_excerpt();
+
+    ?>
 
     <?php //fdctheme_post_thumbnail(); ?>
 
@@ -36,6 +41,9 @@
             get_template_part( 'template-parts/biography' );
         }
         ?>
+
+
+
     </div><!-- .entry-content -->
 
     <footer class="entry-footer">

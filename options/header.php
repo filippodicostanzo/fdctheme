@@ -8,9 +8,34 @@
 
 include( get_template_directory() . '/lib/alphacolorpicker/Customize_Alpha_Color_Control.php');
 
+/**
+ *
+ * ACTION BAR STYLE
+ *
+ */
+
+$wp_customize->add_setting('section_title_header_1', array(
+    'sanitize_callback' => 'sanitize_text_field',
+));
+
+
+$wp_customize->add_control(
+    new Section_Title_Control(
+        $wp_customize,
+        'ctrl_section_title_header_1',
+        array(
+            'label' => 'LAYOUT TYPE',
+            'divider' => false,
+            'section' => 'header',
+            'settings' => 'section_title_header_1',
+        )
+    )
+);
+
+
 $wp_customize->add_section('header', array(
     'title' => __('Header', 'custom_header_section'),  //Visible title of section
-    'priority' => 60, //Determines what order this appears in
+    'priority' => 40, //Determines what order this appears in
 ));
 
 $wp_customize->add_setting('header_type', array(
@@ -85,3 +110,49 @@ $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,
         'settings' => 'mobile_menu_color',
         'section' => 'header',
     )));
+
+
+
+/**
+ *
+ * HEADER HEIGHT
+ *
+ */
+
+$wp_customize->add_setting('section_title_header_2', array(
+    'sanitize_callback' => 'sanitize_text_field',
+));
+
+
+$wp_customize->add_control(
+    new Section_Title_Control(
+        $wp_customize,
+        'ctrl_section_title_header_2',
+        array(
+            'label' => 'HEADER HEIGHT',
+            'divider' => false,
+            'section' => 'header',
+            'settings' => 'section_title_header_2',
+        )
+    )
+);
+
+$wp_customize->add_setting('header_height', array(
+    'transport' => 'refresh', //Autorefresh
+    'default' => 600,
+
+));
+
+//3. Finally, we define the control itself (which links a setting to a section and renders the HTML controls)...
+$wp_customize->add_control(new WP_Customize_Control(
+    $wp_customize, //Pass the $wp_customize object (required)
+    'ctrl_header_height', //Set a unique ID for the control
+    array(
+        'label' => __('Header Height', 'fdctheme'), //Admin-visible name of the control
+        'description' => __('Min 400 - Max 1200'),
+        'settings' => 'header_height', //Which setting to load and manipulate (serialized is okay)
+        'section' => 'header', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+        'type' => 'number',
+        'input_attrs' => array('min' => 400, 'max' => 1200, 'step' => 2)
+    )
+));

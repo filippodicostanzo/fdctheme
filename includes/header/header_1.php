@@ -1,10 +1,12 @@
-<nav class="navbar navbar-expand-lg for-sticky">
+<nav class="navbar navbar-expand-lg for-sticky navbar-main">
     <div class="container">
         <?php get_template_part('includes/logo/logo', 'logo'); ?>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler"><i class="fas fa-bars"></i></button>
+        <!--
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
         </button>
+        -->
         <div class="collapse navbar-collapse" id="navbarNav">
             <?php
             wp_nav_menu(array(
@@ -13,6 +15,7 @@
                 'container' => false,
                 'depth' => 2,
                 'menu_class' => 'navbar-nav',
+                //'after' => ' <i class="far fa-circle"></i>',
                 'fallback_cb' => 'bs4navwalker::fallback',
                 'walker' => new bs4Navwalker(),
             ));

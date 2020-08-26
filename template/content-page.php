@@ -1,36 +1,43 @@
 <?php
 
-if (get_post_meta(get_the_ID(), 'meta-box-select', true) != "-- Select --") {
-    echo do_shortcode('[rev_slider alias="' . get_post_meta(get_the_ID(), 'meta-box-select', true) . '"][/rev_slider]');
+if (function_exists('rev_slider_shortcode')) {
+    if (get_post_meta(get_the_ID(), 'meta-box-select', true) != "-- Select --") {
+        echo do_shortcode('[rev_slider alias="' . get_post_meta(get_the_ID(), 'meta-box-select', true) . '"][/rev_slider]');
+    }
 }
 
 ?>
 
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> class="container">
+<?php
 
-    <div class="section-group">
+if (get_post_meta(get_the_ID(), 'title-page-enable', true)) {
 
-        <?php
+?>
 
-        if (get_post_meta(get_the_ID(), 'meta-box-checkbox', true)) {
-            ?>
-            <header class="entry-header">
-                <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-            </header><!-- .entry-header -->
+    <header class="entry-header" style="background-image:url('<?= the_post_thumbnail_url('full'); ?>')">
+        <div class="header-overlay"></div>
+        <div class="header-title">
+            <?php the_title('<h1 class="entry-title after-title-center container">', '</h1>'); ?>
+            <?php the_breadcrumb(); ?>
+            <div class="read-down"><a href="#Content"><i class="fas fa-chevron-down"></i></a></div>
+        </div>
+    </header><!-- .entry-header -->
+<?php
+}
+
+?>
+
+
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+    <div class="section-group" id="Content">
+
+
+        <div class="entry-content" id="<?php if (get_theme_mod('page_layout_type') == 'full_page') echo 'fullpage' ?>">
             <?php
-        }
 
-        ?>
-
-        <div class="entry-content">
-            <?php
-
-            echo get_post_meta(get_the_ID(), 'meta-box-text', true);
-            echo get_post_meta(get_the_ID(), 'meta-box-checkbox', true);
-            echo get_post_meta(get_the_ID(), 'meta-box-select', true);
             the_content();
-
             wp_link_pages(
                 array(
                     'before' => '<div class="page-links"><span class="page-links-title">' . __('Pages:', 'fdctheme') . '</span>',
@@ -47,7 +54,7 @@ if (get_post_meta(get_the_ID(), 'meta-box-select', true) != "-- Select --") {
         <?php
         edit_post_link(
             sprintf(
-            /* translators: %s: Name of current post */
+                /* translators: %s: Name of current post */
                 __('Edit<span class="screen-reader-text"> "%s"</span>', 'fdctheme'),
                 get_the_title()
             ),

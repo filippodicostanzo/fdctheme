@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg for-sticky">
+<nav class="navbar navbar-expand-lg for-sticky navbar-main">
     <div class="container">
         <div class="navbar-collapse collapse nav-content order-2 order-md-1">
             <?php
@@ -13,11 +13,12 @@
             ));
             ?>
         </div>
-        <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2">
-            <?php get_template_part('includes/logo/logo', 'logo');?>
-            <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content" aria-expanded="false" aria-label="Toggle navigation">
+        <ul class="nav navbar-nav text-nowrap flex-row mx-md-auto order-1 order-md-2 logo-nav">
+            <?php get_template_part('includes/logo/logo', 'logo'); ?>
+            <button class="navbar-toggler"><i class="fas fa-bars"></i></button>
+            <!-- <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".nav-content" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
-            </button>
+            </button>-->
         </ul>
         <div class="ml-auto navbar-collapse collapse nav-content order-3 order-md-3">
             <?php
@@ -34,4 +35,3 @@
         </div>
     </div>
 </nav>
-

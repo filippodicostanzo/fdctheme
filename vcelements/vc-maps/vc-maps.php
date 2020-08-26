@@ -4,13 +4,13 @@ Element Description: VC Info Box
 */
 
 if (class_exists('WPBakeryShortCode')) {
-// Element Class
+    // Element Class
 
     /*
     Element Description: Directory
     */
 
-// Element Class
+    // Element Class
     class vcInfoBox extends WPBakeryShortCode
     {
 
@@ -128,6 +128,19 @@ if (class_exists('WPBakeryShortCode')) {
                         ),
 
                         array(
+                            'type' => 'textfield',
+                            'holder' => 'p',
+                            'class' => 'title-class',
+                            'heading' => __('Height', 'fdctheme'),
+                            'param_name' => 'height',
+                            'std' => '500', // Your default value
+                            'value' => __('', 'fdctheme'),
+                            'admin_label' => false,
+                            'weight' => 0,
+                            'group' => 'Listing',
+                        ),
+
+                        array(
                             'type' => 'textarea',
                             'holder' => 'div',
                             'class' => 'wpc-text-class',
@@ -144,7 +157,6 @@ if (class_exists('WPBakeryShortCode')) {
                     ),
                 )
             );
-
         }
 
         // Element HTML
@@ -165,6 +177,7 @@ if (class_exists('WPBakeryShortCode')) {
                         'latitude' => '',
                         'longitude' => '',
                         'zoom' => '15',
+                        'height' => '500',
                         'design' => ''
                     ),
                     $atts
@@ -175,6 +188,7 @@ if (class_exists('WPBakeryShortCode')) {
             $withreplace = ['"', '[', ']', ''];
 
             $design = str_replace($toreplace, $withreplace, $design);
+            $title = get_bloginfo('name');
 
             $img_url = wp_get_attachment_image_src($bgimg, "large");
             $gmaps_key = get_theme_mod('google_api_key');
@@ -201,7 +215,7 @@ if (class_exists('WPBakeryShortCode')) {
             $html = '
         <div class="' . $id . '">
         </div>
-            
+
 <script>
 var $ = jQuery.noConflict();
 
@@ -209,10 +223,14 @@ $(document).ready(function() {
     var myMap;
     var myLatlng = new google.maps.LatLng(' . $latitude . ',' . $longitude . ');
     var id = \'' . $id . '\';
+    var height = \'' . $height . '\';
+
+    if (height == \'\') height = \'500\';
+
     console.log(myMap + \' \' + myLatlng + \' \' + id);
-    
-    $(\'.\'+id+\'\').append(\'<div id=\'+id+\' style=\"width:500px; height: 500px\">BBB</div>\');
-    
+
+    $(\'.\'+id+\'\').append(\'<div id=\'+id+\' style=\"width:100%; height: \'+height+\'px\"></div>\');
+
     var mapOptions = {
             zoom: ' . $zoom . ',
             center: myLatlng,
@@ -220,34 +238,29 @@ $(document).ready(function() {
             scrollwheel: false,
             styles: ' . $design . '
     };
-    
 
-    
-    
-    
+
      myMap = new google.maps.Map(document.getElementById(id),mapOptions);
-    
-  
+
+
         var marker = new google.maps.Marker({
          position: myLatlng,
          map: myMap,
-         title: \'Name Of Business\',
+         title:\'' . $title . '\',
          icon: \'' . $img_url[0] . '\'
     });
 
-      
-      });
-    
-</script>';
 
+      });
+
+</script>';
 
 
             return $html;
         }
-
     } // End Element Class
 
-// Element Class Init
+    // Element Class Init
     new vcInfoBox();
 }
 

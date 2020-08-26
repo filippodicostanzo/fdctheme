@@ -1,3 +1,20 @@
+.primary-text-color {
+  color: var(--primary-color);
+}
 
+.secondary-text-color {
+  color: var(--secondary-color);
+}
 
+.third-text-color {
+  color: var(--third-color);
+}
+
+.fourth-text-color {
+  color: var(--fourth-color);
+}
+
+p {
+  font-display: fallback;
+}
 /*# sourceMappingURL=variables.css.map */

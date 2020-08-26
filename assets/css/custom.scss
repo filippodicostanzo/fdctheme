@@ -6,6 +6,16 @@
 
 @import "partials/header";
 @import "partials/container";
+@import "partials/buttons";
+@import "partials/responsive";
+@import "partials/footer";
+@import "partials/contactform";
+@import "partials/sideslide";
+@import "partials/contacts";
+@import "partials/components";
+@import "partials/datepicker";
+@import "partials/effects";
+@import "partials/layout";
 
 /*
 *
@@ -15,6 +25,10 @@
 
 body {
   background-color: black;
+
+  img {
+    max-width: 100%;
+  }
 }
 
 body:before {
@@ -28,6 +42,10 @@ body:before {
   width: 100%;
 }
 
+a:hover {
+  text-decoration: none !important;
+}
+
 /*
 *
 * NAVBAR
@@ -37,5 +55,159 @@ body:before {
 @media (min-width: 768px) {
   .navbar-nav {
     flex-wrap: wrap;
+  }
+}
+
+/**************************
+* VENOBOX
+**************************/
+.vbox-inline {
+  padding: 50px !important;
+  border-radius: 30px;
+}
+
+/**************************
+* FLEX
+**************************/
+
+@media (min-width: 768px) {
+  .flex-align-middle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+/**************************
+* TITLE SECTION
+**************************/
+
+h1.title-section {
+  line-height: 80px;
+  position: relative;
+
+  &:before {
+    width: 100%;
+    margin: 0;
+    height: 2px;
+    content: " ";
+    border-bottom: 7px double #ddd;
+  }
+
+  &:after {
+    width: 100%;
+    margin: 0;
+    height: 2px;
+    content: " ";
+    border-bottom: 7px double #ddd;
+  }
+}
+
+.section-title {
+  align-items: center;
+  display: flex;
+
+  &:before {
+    width: 100%;
+    margin: 0;
+    height: 2px;
+    content: " ";
+    border-bottom: 7px double #ddd;
+  }
+
+  &:after {
+    width: 100%;
+    margin: 0;
+    height: 2px;
+    content: " ";
+    border-bottom: 7px double #ddd;
+  }
+
+  h2 {
+    line-height: 60px;
+    text-transform: uppercase;
+    flex-shrink: 0;
+    margin: 0 15px;
+  }
+}
+
+/**************************
+* IMAGES
+**************************/
+.image-container {
+  padding-bottom: 20px;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.image-border-overlay {
+  figure {
+    div {
+      position: relative;
+
+      &:after {
+        content: "";
+        position: absolute;
+        width: 90%;
+        border: 1px solid white;
+        height: 90%;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        margin: 0 auto;
+        top: 5%;
+      }
+    }
+  }
+}
+
+/**************************
+* DIVIDERS
+**************************/
+.uncode-divider-wrap-bottom {
+  transform: scaleX(-1) translateZ(0px);
+  position: relative;
+  margin-top: -60px;
+  z-index: 9;
+
+  svg {
+    width: 100%;
+    height: 60px;
+    transform: translatex(0) scaley(-1);
+  }
+}
+
+.uncode-divider-wrap-footer {
+  transform: scaleX(-1) translateZ(0px);
+  position: relative;
+  margin-bottom: -60px;
+  z-index: 9;
+
+  svg {
+    width: 100%;
+    height: 60px;
+    transform: translatex(0) scaley(1);
+  }
+}
+
+/**************************
+* COPYRIGHT
+**************************/
+
+@media screen and (max-width: 767px) {
+  .lda-copyright {
+    a {
+      display: inline-block;
+      padding: 10px;
+      box-sizing: border-box;
+    }
   }
 }

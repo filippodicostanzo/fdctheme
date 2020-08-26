@@ -27,7 +27,7 @@
         <?php } else {
             ?>
 
-            <h3 class="title"><?= get_bloginfo('name') ?></h3>>
+            <h3 class="title"><?= get_bloginfo('name') ?></h3>
 
             <?php
 

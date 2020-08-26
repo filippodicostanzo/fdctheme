@@ -8,6 +8,10 @@
   p {
     margin-bottom: 0;
   }
+
+  .social {
+    float: right;
+  }
 }
 
 /*
@@ -15,6 +19,31 @@
 * HEADER 1
 *
 */
+
+.header_1 {
+  @media (max-width: 991px) {
+    nav {
+      justify-content: center;
+
+      ul {
+        width: 100%;
+        justify-content: space-between;
+
+        li {
+          text-align: center;
+        }
+      }
+
+      .dropdown-menu {
+        a {
+          text-align: center;
+        }
+      }
+
+    }
+
+  }
+}
 
 /*
 *
@@ -24,23 +53,38 @@
 
 .header_2 {
 
+  nav {
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 3px 5px -2px;
+    z-index: 9;
+  }
+
   .navbar-collapse {
     justify-content: center;
+
     ul {
       justify-content: center;
+
+      li {
+        .nav-link {
+          padding: 0 20px;
+        }
+      }
     }
   }
 
-  @media (max-width: 967px) {
+
+  @media (max-width: 991px) {
     .order-1 {
       order: 1;
     }
+
     .order-md-1 {
       order: 2;
     }
 
     nav {
       justify-content: center;
+
 
       ul {
         width: 100%;
@@ -53,6 +97,16 @@
     }
 
   }
+
+  @media (min-width: 992px) {
+    .navbar-collapse {
+      width: 40%;
+    }
+
+    .logo-nav {
+      width: 20%;
+    }
+  }
 }
 
 /*
@@ -62,7 +116,7 @@
 */
 
 .header_3 {
-  .navbar {
+  .navbar:not(.fixed-top) {
     position: absolute;
     z-index: 9;
     width: 100%;
@@ -76,7 +130,7 @@
 */
 
 .header_4 {
-  .navbar {
+  .navbar:not(.fixed-top) {
     position: absolute;
     z-index: 9;
     width: 100%;
@@ -84,16 +138,29 @@
 
   .navbar-collapse {
     justify-content: center;
+
+    @media (min-width: 992px) {
+      width: 40%;
+    }
+
     ul {
       justify-content: center;
     }
   }
 
+  .logo-container {
+    @media (min-width: 992px) {
+      width: 20%;
+    }
+  }
 
-  @media (max-width: 967px) {
+
+
+  @media (max-width: 991px) {
     .order-1 {
       order: 1;
     }
+
     .order-md-1 {
       order: 2;
     }
@@ -317,7 +384,8 @@ ul.social {
   }
 }
 
-ul.contacts {
+ul.contacts,
+ul.contacts-mobile {
   list-style: none outside;
   padding: 12px 0;
   margin: 0;
@@ -325,5 +393,106 @@ ul.contacts {
   li {
     display: inline-block;
     margin-right: 12px;
+  }
+}
+
+
+#flags_language_selector {
+  float: right;
+  padding-left: 0;
+  text-align: center;
+  padding: 12px 0 0 30px;
+
+  p,
+  i {
+    display: inline-block;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: #999999;
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  a p {
+    color: #999999;
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+  #flags_language_selector {
+    display: inline-block;
+    margin-bottom: 0;
+    color: #999999;
+    float: right;
+    width: 50%;
+  }
+
+  .social {
+    display: inline-block;
+    float: left !important;
+    width: 50%;
+  }
+
+
+}
+
+
+/*
+*
+* TITLE
+*
+*/
+
+.entry-header {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+
+  .header-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    height: 100%;
+    text-align: center;
+
+    &:after {
+      top: 0;
+      left: 0;
+      content: "";
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      background: -moz-linear-gradient(top, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 28%, rgba(0, 0, 0, .8) 100%);
+      background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(0, 0, 0, .3)), color-stop(18%, rgba(0, 0, 0, 0)), color-stop(28%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, .8)));
+      background: -webkit-linear-gradient(top, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 28%, rgba(0, 0, 0, .8) 100%);
+      background: -o-linear-gradient(top, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 28%, rgba(0, 0, 0, .8) 100%);
+      background: -ms-linear-gradient(top, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 28%, rgba(0, 0, 0, .8) 100%);
+      background: linear-gradient(to bottom, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0) 18%, rgba(0, 0, 0, 0) 28%, rgba(0, 0, 0, .8) 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#4d000000', endColorstr='#cc000000', GradientType=0);
+    }
+  }
+
+  .header-title {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-bottom: 30px;
+
+    .entry-title {}
+
+    .read-down {
+      a {
+        font-size: 25px;
+      }
+    }
   }
 }

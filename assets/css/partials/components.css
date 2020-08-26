@@ -1,0 +1,9 @@
+.estimate {
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: linear-gradient(-50deg, #fdc502, #fdc502 25%, #ffd237 50%);
+  border-radius: 20px;
+  text-align: center;
+}
+/*# sourceMappingURL=components.css.map */

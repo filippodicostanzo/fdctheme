@@ -1,0 +1,42 @@
+/**************************
+* MARGIN
+**************************/
+.m-t-1 {
+  margin-top: 10px;
+}
+
+.m-t-2 {
+  margin-top: 20px;
+}
+
+.m-t-3 {
+  margin-top: 30px;
+}
+
+.p-b-1 {
+  padding-bottom: 10px;
+}
+
+.p-b-2 {
+  padding-bottom: 20px;
+}
+
+.p-b-3 {
+  padding-bottom: 30px;
+}
+
+/**************************
+* PADDING
+**************************/
+@media only screen and (min-width: 768px) {
+  .p-r-1 {
+    padding-right: 10px;
+  }
+  .p-r-2 {
+    padding-right: 20px;
+  }
+  .p-r-3 {
+    padding-right: 30px;
+  }
+}
+/*# sourceMappingURL=layout.css.map */

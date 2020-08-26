@@ -7,12 +7,16 @@ if ($action_bar_enable == 1 && (($header_type != 'header_5') && ($header_type !=
 
     <div class="actionbar">
         <div class="container">
-            <div class="row">
-                <div class="col-6"><?php include(get_template_directory() . '/includes/contacts/contacts.php'); ?></div>
-                <div class="col-6"><?php include(get_template_directory() . '/includes/social/social.php');
+            <div class="row row-reverse">
+                <div class="col-lg-6 col-md-8 col-sm-12"><?php include(get_template_directory() . '/includes/contacts/contacts.php'); ?></div>
+                <div class="col-lg-6 col-md-4 col-sm-12">
+                    <?php
                     if( function_exists( 'icl_get_languages' )) {
-                        include(get_template_directory() . '/includes/wpml/wpml.php');
+                    include(get_template_directory() . '/includes/wpml/wpml.php');
                     }
+
+                    include(get_template_directory() . '/includes/social/social.php');
+
                      ?></div>
             </div>
         </div>

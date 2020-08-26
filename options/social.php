@@ -1,8 +1,32 @@
 <?php
 $wp_customize->add_section('social', array(
     'title' => __('Social', 'custom_social_section'),  //Visible title of section
-    'priority' => 60, //Determines what order this appears in
+    'priority' => 111, //Determines what order this appears in
 ));
+
+/**
+ *
+ * SOCIAL
+ *
+ */
+
+$wp_customize->add_setting('section_title_social_1', array(
+    'sanitize_callback' => 'sanitize_text_field',
+));
+
+
+$wp_customize->add_control(
+    new Section_Title_Control(
+        $wp_customize,
+        'ctrl_section_title_social_1',
+        array(
+            'label' => 'SOCIAL',
+            'divider' => false,
+            'section' => 'social',
+            'settings' => 'section_title_social_1',
+        )
+    )
+);
 
 $wp_customize->add_setting('facebook', array(
     'transport' => 'refresh' //Autorefresh
@@ -81,3 +105,34 @@ $wp_customize->add_control(new WP_Customize_Control(
         'type' => 'text'
     )
 ));
+
+$wp_customize->add_setting('tripadvisor', array(
+    'transport' => 'refresh' //Autorefresh
+));
+
+$wp_customize->add_control(new WP_Customize_Control(
+    $wp_customize, //Pass the $wp_customize object (required)
+    'ctrl_tripadvisor', //Set a unique ID for the control
+    array(
+        'label' => __('Tripadvisor', 'fdctheme'), //Admin-visible name of the control
+        'settings' => 'tripadvisor', //Which setting to load and manipulate (serialized is okay)
+        'section' => 'social', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+        'type' => 'text'
+    )
+));
+
+$wp_customize->add_setting('linkedin', array(
+    'transport' => 'refresh' //Autorefresh
+));
+
+$wp_customize->add_control(new WP_Customize_Control(
+    $wp_customize, //Pass the $wp_customize object (required)
+    'ctrl_linkedin', //Set a unique ID for the control
+    array(
+        'label' => __('Linkedin', 'fdctheme'), //Admin-visible name of the control
+        'settings' => 'linkedin', //Which setting to load and manipulate (serialized is okay)
+        'section' => 'social', //ID of the section this control should render in (can be one of yours, or a WordPress default section)
+        'type' => 'text'
+    )
+));
+

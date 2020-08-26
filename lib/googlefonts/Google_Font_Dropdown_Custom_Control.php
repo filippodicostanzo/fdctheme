@@ -5,24 +5,28 @@
  * Date: 28/06/2019
  * Time: 15.50
  */
-include (get_template_directory() . '/lib/constant/constant.php');
 
-class Google_Font_Dropdown_Custom_Control  extends WP_Customize_Control{
+class Google_Font_Dropdown_Custom_Control extends WP_Customize_Control
+{
 
     private $fonts = false;
-    public function __construct($manager, $id, $args = array(), $options = array()){
+
+    public function __construct($manager, $id, $args = array(), $options = array())
+    {
         $this->fonts = $this->get_google_fonts();
-        parent::__construct( $manager, $id, $args );
+        parent::__construct($manager, $id, $args);
     }
 
-    public function render_content(){
+    public function render_content()
+    {
         ?>
         <label class="customize_dropdown_input">
-            <span class="customize-control-title"><?php echo esc_html( $this->label ); ?></span>
-            <select id="<?php echo esc_attr($this->id); ?>" name="<?php echo esc_attr($this->id); ?>" data-customize-setting-link="<?php echo esc_attr($this->id); ?>">
+            <span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
+            <select id="<?php echo esc_attr($this->id); ?>" name="<?php echo esc_attr($this->id); ?>"
+                    data-customize-setting-link="<?php echo esc_attr($this->id); ?>">
                 <?php
-                foreach ( $this->fonts as $k => $v ){
-                    echo '<option value="'.$v['family'].'" ' . selected( $this->value(), $v['family'], false ) . '>'.$v['family'].'</option>';
+                foreach ($this->fonts as $k => $v) {
+                    echo '<option value="' . $v['family'] . '" ' . selected($this->value(), $v['family'], false) . '>' . $v['family'] . '</option>';
                 }
                 ?>
             </select>
@@ -30,14 +34,15 @@ class Google_Font_Dropdown_Custom_Control  extends WP_Customize_Control{
         <?php
     }
 
-    public function get_google_fonts(){
-        if (get_transient('mytheme_google_font_list')) {
-            $content = get_transient('mytheme_google_font_list');
+    public function get_google_fonts()
+    {
+        if (get_transient('fdctheme_google_font_list')) {
+            $content = get_transient('fdctheme_google_font_list');
         } else {
-            $googleApi = 'https://www.googleapis.com/webfonts/v1/webfonts?sort=alpha&key='.env('GOOGLE_FONT_API_KEY');
-            $fontContent = wp_remote_get( $googleApi, array('sslverify'   => false) );
+            $googleApi = 'https://www.googleapis.com/webfonts/v1/webfonts?sort=alpha&key='.getenv('GOOGLE_FONT_API_KEY');
+            $fontContent = wp_remote_get($googleApi, array('sslverify' => false));
             $content = json_decode($fontContent['body'], true);
-            set_transient( 'mytheme_google_font_list', $content, 0 );
+            set_transient('fdctheme_google_font_list', $content, 0);
         }
 
         return $content['items'];

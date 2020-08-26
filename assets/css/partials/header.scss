@@ -1,0 +1,329 @@
+/*
+*
+* ACTION BAR
+*
+*/
+
+.actionbar {
+  p {
+    margin-bottom: 0;
+  }
+}
+
+/*
+*
+* HEADER 1
+*
+*/
+
+/*
+*
+* HEADER 2
+*
+*/
+
+.header_2 {
+
+  .navbar-collapse {
+    justify-content: center;
+    ul {
+      justify-content: center;
+    }
+  }
+
+  @media (max-width: 967px) {
+    .order-1 {
+      order: 1;
+    }
+    .order-md-1 {
+      order: 2;
+    }
+
+    nav {
+      justify-content: center;
+
+      ul {
+        width: 100%;
+        justify-content: space-between;
+
+        li {
+          text-align: center;
+        }
+      }
+    }
+
+  }
+}
+
+/*
+*
+* HEADER 3
+*
+*/
+
+.header_3 {
+  .navbar {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+  }
+}
+
+/*
+*
+* HEADER 4
+*
+*/
+
+.header_4 {
+  .navbar {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+  }
+
+  .navbar-collapse {
+    justify-content: center;
+    ul {
+      justify-content: center;
+    }
+  }
+
+
+  @media (max-width: 967px) {
+    .order-1 {
+      order: 1;
+    }
+    .order-md-1 {
+      order: 2;
+    }
+
+
+    nav {
+      justify-content: center;
+
+      ul {
+        width: 100%;
+        justify-content: space-between;
+
+        li {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/*
+*
+* HEADER 5
+*
+*/
+
+.header_5 {
+  .navbar {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030
+  }
+}
+
+@media (min-width: 768px) {
+  .header_5 {
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      width: 20%;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+      right: auto;
+
+      .navbar-collapse {
+        flex-grow: 0;
+        flex-direction: column;
+        width: 100%;
+
+        .navbar-nav {
+          flex-direction: column;
+          width: 100%;
+
+          .nav-item {
+            width: 100%;
+
+            .dropdown-menu {
+              left: 100%;
+              top: 0;
+            }
+
+            .dropdown-toggle:after {
+              border-top: .3em solid transparent;
+              border-left: .3em solid;
+              border-bottom: .3em solid transparent;
+              border-right: none;
+              vertical-align: baseline
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+*
+* HEADER 6
+*
+*/
+
+.header_6 {
+  .navbar {
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 1030;
+  }
+}
+
+@media (min-width: 768px) {
+  .header_6 {
+
+    .container {
+      width: 80%;
+      margin-left: 0;
+      max-width: none;
+    }
+
+    .navbar {
+      position: fixed;
+      bottom: 0;
+      width: 20%;
+      flex-flow: column nowrap;
+      align-items: flex-start;
+
+      .navbar-collapse {
+        flex-grow: 0;
+        flex-direction: column;
+        width: 100%;
+
+        .navbar-nav {
+          flex-direction: column;
+          width: 100%;
+
+          .nav-item {
+            width: 100%;
+
+            .dropdown-menu {
+              left: 100%;
+              top: 0;
+            }
+
+            .dropdown-toggle:after {
+              border-top: .3em solid transparent;
+              border-left: .3em solid;
+              border-bottom: .3em solid transparent;
+              border-right: none;
+              vertical-align: baseline
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*
+*
+* LOGO STICKY
+*
+*/
+
+nav.fixed-top {
+
+  .logo-main {
+    display: none;
+  }
+
+  .logo-sticky {
+    display: block;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+}
+
+/*
+*
+* LOGO MAIN
+*
+*/
+
+nav:not(.fixed-top) {
+
+  .logo-main {
+    display: block;
+  }
+
+  .logo-sticky {
+    display: none;
+  }
+
+  .logo-mobile {
+    display: none;
+  }
+}
+
+/*
+*
+* LOGO MOBILE
+*
+*/
+
+@media only screen and (max-width: 767px) {
+  nav:not(.fixed-top) {
+    .logo-mobile {
+      display: block;
+    }
+
+    .logo-main {
+      display: none;
+    }
+
+    .logo-sticky {
+      display: none;
+    }
+  }
+}
+
+/*
+*
+* SOCIAL
+*
+*/
+
+ul.social {
+  list-style: none outside;
+  padding: 12px 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 12px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+ul.contacts {
+  list-style: none outside;
+  padding: 12px 0;
+  margin: 0;
+
+  li {
+    display: inline-block;
+    margin-right: 12px;
+  }
+}

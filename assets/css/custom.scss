@@ -1,0 +1,41 @@
+/*
+*
+* IMPORT PARTIALS
+*
+*/
+
+@import "partials/header";
+@import "partials/container";
+
+/*
+*
+* BODY
+*
+*/
+
+body {
+  background-color: black;
+}
+
+body:before {
+  content: "";
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  display: block;
+  height: 100vh;
+  width: 100%;
+}
+
+/*
+*
+* NAVBAR
+*
+*/
+
+@media (min-width: 768px) {
+  .navbar-nav {
+    flex-wrap: wrap;
+  }
+}
